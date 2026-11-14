@@ -9,7 +9,7 @@ Authors@R:
            comment = c(ORCID = "0000-0002-1825-0097"))
 Description: provide text on what your project emphasizes and 
 	accomplishes in three or more complete sentences.
-Depends: R (>= 4.5.0)
+Depends: R (>= 4.4.0)
 Suggests: knitr, testthat, rmarkdown, pkgdown
 License: Artistic-2.0
 VignetteBuilder: quarto
