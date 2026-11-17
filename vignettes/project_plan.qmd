@@ -16,11 +16,7 @@ Dataset 1: NHANES
 Dataset 2: Waterborne illness data
 
 - Research question: Is there an association between the water exposure and the number of illnesses reported in a waterborne disease outbreak?
-
-- The unit of analysis are individual outbreaks that are coded in the dataset. The study population is not individuals but rather a collection of disease outbreaks from 1971 to 2023, where waterborne is a subset of this. 
-
-- The exposure variable is the type of water exposure, which is a categorical variable with levels: drinking, treated recreational, untreated recreational, and other/environmental water. There aren't any missing values, so we don't need to worry about handling missing data. 
-
-- The outcome variable is illnesses, is a continuous variable that represents the total number of people who got the illness in that specific outbreak.  
-
-- Potential confounders that I anticipate adjusting for are year, month (can turn into a season), and state. 
+- The unit of analysis are individual outbreaks that are coded in the dataset. The study population is not individuals but rather a collection of disease outbreaks from 1971 to 2023, where waterborne is a subset of this.
+- The exposure variable is the type of water exposure, which is a categorical variable with levels: drinking, treated recreational, untreated recreational, and other/environmental water. There aren't any missing values, so we don't need to worry about handling missing data.
+- The outcome variable is illnesses, is a continuous variable that represents the total number of people who got the illness in that specific outbreak.\
+- Potential confounders that I anticipate adjusting for are year, month (can turn into a season), and state.
