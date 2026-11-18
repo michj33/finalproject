@@ -1,26 +1,47 @@
 # Project Proposal
 
-## Quarto
+Dataset 1: NHANES
 
-Quarto enables you to weave together content and executable code into a
-finished document. To learn more about Quarto see <https://quarto.org>.
+- Research question: Is short sleep duration associated with depressive
+  symptoms among US adults?
+- The unit of analysis is individual participants in the NHANES dataset.
+  Since we are focused on US adults, I would restrict the dataset to be
+  the population of individuals aged 18 and older.
+- The exposure variable is sleep duration. It is coded as a continuous
+  variable between 2 to 12 hours. There are also 2245 missing
+  observations for this variable. Since there are missing observations,
+  I would do a complete-case analysis and assume that missingness occurs
+  at random. Potentially, I would consider multiple imputation later on,
+  but it requires more assumptions that the data might not be able to
+  meet. I would have to look into exploratory data analysis and then
+  address this issue.
+- The outcome variable is a categorical variable of depression. It has 3
+  levels: none, several, and most. It also has 3327 missing
+  observations. None is coded as 0 days depressed in the past 2 weeks.
+  Several is between 1-7 days and most is more than half the days (8-14
+  days).
+- For confounding variables to adjust for, I would choose to look into
+  age, sex, race, education, family income, physical activity/physical
+  activity days, smoking status, and potentially a variable like TV
+  hours per day. I would have to look into both the classical and
+  operational definitions of confounders to assess each before
+  proceeding.
 
-## Running Code
+Dataset 2: Waterborne illness data
 
-When you click the **Render** button a document will be generated that
-includes both content and the output of embedded code. You can embed
-code like this:
-
-``` r
-
-1 + 1
-```
-
-    [1] 2
-
-You can add options to executable code like this
-
-    [1] 4
-
-The `echo: false` option disables the printing of code (only output is
-displayed).
+- Research question: Is there an association between the water exposure
+  and the number of illnesses reported in a waterborne disease outbreak?
+- The unit of analysis are individual outbreaks that are coded in the
+  dataset. The study population is not individuals but rather a
+  collection of disease outbreaks from 1971 to 2023, where waterborne is
+  a subset of this.
+- The exposure variable is the type of water exposure, which is a
+  categorical variable with levels: drinking, treated recreational,
+  untreated recreational, and other/environmental water. There aren’t
+  any missing values, so we don’t need to worry about handling missing
+  data.
+- The outcome variable is illnesses, is a continuous variable that
+  represents the total number of people who got the illness in that
+  specific outbreak.\
+- Potential confounders that I anticipate adjusting for are year, month
+  (can turn into a season), and state.
